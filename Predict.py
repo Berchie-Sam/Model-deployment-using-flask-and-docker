@@ -4,7 +4,7 @@
 from flask import Flask, request, jsonify
 import pickle
 
-with open("D:\RGT\Code\Machine Learning\Training\model_C=0.01.bin", 'rb') as f_in:
+with open("model_C=0.01.bin", 'rb') as f_in:
     (dv, model) = pickle.load(f_in)
 
 

@@ -13,5 +13,5 @@ COPY ["model_C=0.01.bin", "Predict.py", "./"]
 EXPOSE 9696
 
 
-ENTRYPOINT ["waitress-serve", "--host=0.0.0.0", "--port=9696", "Predict:app"]
+ENTRYPOINT ["pipenv", "run", "waitress-serve", "--host=0.0.0.0", "--port=9696", "Predict:app"]
 
